@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <title>Login</title>
+</head>
+
+<body>
+
+    <main class="login">
+        <div class="login_container">
+            <h1 class="login_title">Login</h1>
+            <form action="" class="login_form" method="POST">
+                <input type="email" id="login_email" placeholder="e-mail">
+                <span class="login_input-border"></span>
+                <input type="text" id="login_senha" type="password" placeholder="senha">
+                <span class="login_input-border"></span>
+                <button class="login_submit" type="submit" onClick="validateForm()">Login</button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+
+        function validateForm() {
+
+            if (login_email.value == '' || login_senha.value == ''){
+               return window.alert('Preencha os campos corretamente');
+            }
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
